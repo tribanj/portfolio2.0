@@ -1,8 +1,8 @@
 header {
     height: 100vh;
-    padding-top: 15rem;
+    padding-top: 7rem;
     overflow: hidden;
-    margin: 3rem;
+    /* margin: 3rem; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -10,6 +10,9 @@ header {
     font-size: 30PX;
 }
 
+.headerContent{
+    margin-top: 7rem;
+}
 .exp {
     font-size: .8rem;
     font-weight: bold;
@@ -34,7 +37,7 @@ header {
 /* CTA  */
 
 .cta {
-    margin-top:5rem;
+    margin-top:2rem;
     display: flex;
     gap: 1.2rem;
     justify-content: center;
@@ -64,19 +67,14 @@ header {
 .me {
     background: linear-gradient(var(--color-primary), transparent);
     width: 22rem;
-    height: 24rem;
-    position: absolute;
+    /* height: 24rem; */
+    /* position: absolute; */
     left: calc(50% - 11rem);
     margin-top: 2rem;
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
-    padding: 5rem 1.5rem 1.5rem 1.5rem;
-    margin-bottom: 10rem;
-}
-
-.meimg {
-    height: 500px;
-    width: 22rem;
+    /* padding: 5rem 1.5rem 1.5rem 1.5rem; */
+    /* margin-bottom: 10rem; */
 }
 
 

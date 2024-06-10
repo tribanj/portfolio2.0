@@ -1,10 +1,11 @@
 import React from "react";
 import "./services.css";
 import { BiCheck } from "react-icons/bi";
+// import Uxui from "../UXUI/Uxui";
 const Services = () => {
   return (
     <section id="services">
-      <h5>What I offer</h5>
+      <h5>What I offer</h5> 
       <h2>Services</h2>
       <div className="container services__container">
         <article className="service">
@@ -16,7 +17,7 @@ const Services = () => {
               <BiCheck className="service__list-icon" />
               <p>Adove PhotoShop</p>
             </li>
-            <li>
+            <li> 
               <BiCheck className="service__list-icon" />
               <p>Adove XD</p>
             </li>

@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
 import ME from "../../assets/me1.png";
-import { FaAward } from "react-icons/fa";
+import { FaAward, FaYoutube } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { BsFolderCheck } from "react-icons/bs";
 const About = () => {
@@ -25,9 +25,9 @@ const About = () => {
             </article>
 
             <article className="about__card">
-              <FiUsers className="about_icon" />
-              <h5>Clients</h5>
-              <small>50+ worldWide</small>
+              <FaYoutube className="about_icon" />
+              <h5>YouTube</h5>
+              <small>15K+ Subscriber</small>
             </article>
 
             <article className="about__card">
@@ -37,10 +37,15 @@ const About = () => {
             </article>
           </div>
           <p>
-            My name is Tribhuwan kumar. I am a student of B.tech Computer
-            Science & Engineering. I am pursuing my b.tech degree from IKGPTU
-            main campus Kapurthala. I am a final year student.I am an
-            innovative, creative thinker
+            My name is Tribhuwan kumar. I am a skilled MERN Stack Developer with
+            a passion for building dynamic, responsive web applications. My
+            expertise lies in full-stack development, utilizing MongoDB,
+            Express.js, React, and Node.js to create seamless user experiences
+            and efficient, maintainable code. I excel at integrating front-end
+            and back-end services, ensuring robust and scalable solutions.
+            Dedicated to continuous learning and growth, I am committed to
+            delivering high-quality projects that meet user needs and industry
+            standards.
           </p>
           <a href="#contact-us" id="contact" className="btn btn-primary">
             {" "}

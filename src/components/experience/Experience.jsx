@@ -83,7 +83,7 @@ const Experience = () => {
               <div>
                 {" "}
                 <h4>PHP </h4>
-                <small className="text-light">Basic</small>
+                <small className="text-light">Initial</small>
               </div>
             </article>
             <article className="experience__details">
@@ -99,7 +99,7 @@ const Experience = () => {
               <div>
                 {" "}
                 <h4>MySQL</h4>
-                <small className="text-light">Basic</small>
+                <small className="text-light">Initial</small>
               </div>
             </article>
             <article className="experience__details">
@@ -107,7 +107,7 @@ const Experience = () => {
               <div>
                 {" "}
                 <h4>Python </h4>
-                <small className="text-light">Basic</small>
+                <small className="text-light">Initial</small>
               </div>
             </article>
           </div>
