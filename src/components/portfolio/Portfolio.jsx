@@ -20,7 +20,7 @@ const data = [
   {
     id: 2,
     image: IMG2,
-    title: "Resturent Website ",
+    title: "Restaurent Website ",
     github: "https://github.com/tribanj",
     demo: "https://restauhotel.netlify.app/",
   },

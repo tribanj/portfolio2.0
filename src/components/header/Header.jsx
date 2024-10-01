@@ -6,13 +6,19 @@ import HeaderSocial from "./HeaderSocial";
 const Header = () => {
   return (
     <header id="home">
-      <div className="container header__container" style={{ display: "flex", justifyContent:"space-between" }}>
+      <div
+        className="container header__container"
+        style={{ display: "flex", justifyContent: "space-between" }}
+      >
         <div className="headerContent">
           <h5>Hello I'm</h5>
           <h1>Tribuwan Kumar</h1>
           <h5 className="text-light BLD">MERN STACK developer, YouTuber</h5>
           <span className="exp">
-            Work experience:- Working at "Headway Vision" (Aug(22) - current)
+            <li>
+              Work experience:- Worked at "Headway Vision" (Aug(22) - jan(24))
+            </li>
+            <li>working at varad digital marketing (march(24)- current)</li>
           </span>
         </div>
 
@@ -30,7 +36,7 @@ const Header = () => {
           Scrol Down
         </a>
       </div>
-        <CTA />
+      <CTA />
     </header>
   );
 };

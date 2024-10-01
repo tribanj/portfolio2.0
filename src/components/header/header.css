@@ -16,12 +16,13 @@ header {
 .exp {
     font-size: .8rem;
     font-weight: bold;
-    color: rgb(99, 159, 60);
+    color: rgb(242, 159, 5);
     font-family: monospace;
     /* letter-spacing: 2px; */
     text-decoration: underline;
     cursor: pointer;
 }
+
 
 .header__section {
     text-align: center;
