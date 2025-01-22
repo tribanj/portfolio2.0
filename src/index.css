@@ -41,7 +41,7 @@ body {
     color: var(--color-white);
     line-height:1.7;
     /* background-image: url("./assets/bg-texture.png"); */
-    background-color: rgb(13, 2, 43);
+    background-color: black;
     color: white;
 }
 

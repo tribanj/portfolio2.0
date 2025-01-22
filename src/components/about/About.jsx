@@ -27,13 +27,13 @@ const About = () => {
             <article className="about__card">
               <FaYoutube className="about_icon" />
               <h5>YouTube</h5>
-              <small>15K+ Subscriber</small>
+              <small>22K+ Subscriber</small>
             </article>
 
             <article className="about__card">
               <BsFolderCheck className="about_icon" />
               <h5>Project </h5>
-              <small>20+ Completed</small>
+              <small>5+ Completed</small>
             </article>
           </div>
           <p>

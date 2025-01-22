@@ -48,7 +48,7 @@ const Footer = () => {
 
       <div className="footer__copyright">
         <small>
-          &copy; Tribhuwan Personal Portfolio 2023 All right reserved
+          &copy; Tribhuwan Personal Portfolio 2025 All right reserved
         </small>
       </div>
     </footer>

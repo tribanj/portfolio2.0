@@ -1,6 +1,7 @@
 import React from "react";
 import "./youtube.css";
 import youtubeBanner from "../../assets/youtube.png";
+
 const YouTubeChannel = () => {
   const openYoutube = () => {
     window.open(
@@ -8,68 +9,36 @@ const YouTubeChannel = () => {
       "_blank"
     );
   };
+
   return (
-    <div className="youtube-section ">
-      <div className="channel-Banner container" onClick={openYoutube}>
-        <h2 className="text-center my-3">My YouTube Channel</h2>
-        <img src={youtubeBanner} alt="Youtube Banner" />
+    <div className="youtube-section">
+      {/* YouTube Banner Section */}
+      <div className="channel-banner container" onClick={openYoutube}>
+        <h2 className="text-center">My YouTube Channel</h2>
+        <img src={youtubeBanner} alt="YouTube Banner" className="banner-image" />
       </div>
+
+      {/* Videos Section */}
       <div className="video-container container">
-        <iframe
-          width="560"
-          height="400"
-          src="https://www.youtube.com/embed/_ozYwoNxLWE"
-          frameBorder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          title="YouTube Video"
-        ></iframe>
-        <iframe
-          width="560"
-          height="400"
-          src="https://www.youtube.com/embed/aqZbP2olX9s"
-          frameBorder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          title="YouTube Video"
-        ></iframe>
-        <iframe
-          width="560"
-          height="400"
-          src="https://www.youtube.com/embed/jSJxVatunh8"
-          frameBorder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          title="YouTube Video"
-        ></iframe>
-        <br />
-        <iframe
-          width="560"
-          height="400"
-          src="https://www.youtube.com/embed/jcyVfo_rLpk"
-          frameBorder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          title="YouTube Video"
-        ></iframe>
-        <iframe
-          width="560"
-          height="400"
-          src="https://www.youtube.com/embed/RuP3IJqtPZc"
-          frameBorder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          title="YouTube Video"
-        ></iframe>
-        <iframe
-          width="560"
-          height="400"
-          src="https://www.youtube.com/embed/vycGLy-jkt0"
-          frameBorder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          title="YouTube Video"
-        ></iframe>
+        {[
+          "_ozYwoNxLWE",
+          "aqZbP2olX9s",
+          "jSJxVatunh8",
+          "jcyVfo_rLpk",
+          "RuP3IJqtPZc",
+          "vycGLy-jkt0",
+        ].map((videoId, index) => (
+          <div className="video-card" key={index}>
+            <iframe
+              src={`https://www.youtube.com/embed/${videoId}`}
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              title={`YouTube Video ${index + 1}`}
+            ></iframe>
+            <h3 className="video-title">Video {index + 1}</h3>
+          </div>
+        ))}
       </div>
     </div>
   );
