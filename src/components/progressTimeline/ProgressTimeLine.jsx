@@ -17,25 +17,25 @@ const CompactProgressTimeline = () => {
     {
       id: 1,
       title: "College Education",
-      institution: "ABC University",
-      duration: "2018 - 2022",
+      institution: "IKGPTU",
+      duration: "2020 - 2024",
       description: "Bachelor's in Computer Science",
       icon: <FiBook className="text-sm" />,
       progress: 100,
       position: 0,
       color: "bg-blue-500",
-      year: "2018"
+      year: "2020"
     },
     {
       id: 2,
       title: "Web Developer Intern",
       institution: "Headway Vision",
       duration: "January 2023 - February 2024",
-      description: "FrontEnd Developer Stack Developer",
+      description: "FrontEnd Developer",
       icon: <FiBriefcase className="text-sm" />,
       progress: 100, // Changed to 100% since this is completed
       position: 50, // Changed position to 50% for better spacing
-      color: "bg-yellow-500", // Fixed: changed "bg-YEllow-500" to "bg-yellow-500"
+      color: "bg-yellow-600", // Fixed: changed "bg-YEllow-500" to "bg-yellow-500"
       year: "2023"
     },
     {
