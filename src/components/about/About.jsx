@@ -63,17 +63,17 @@ const About = () => {
             {/* Floating info elements around the sphere */}
             <div className="absolute top-4 left-4 bg-indigo-600/80 backdrop-blur-sm text-white px-4 py-2 rounded-lg animate-float">
               <span className="font-semibold">Experience</span>
-              <p className="text-sm">1+ Years</p>
+              <p className="text-sm">1.5+ Years</p>
             </div>
             
             <div className="absolute top-4 right-4 bg-pink-600/80 backdrop-blur-sm text-white px-4 py-2 rounded-lg animate-float" style={{animationDelay: '0.5s'}}>
               <span className="font-semibold">YouTube</span>
-              <p className="text-sm">22K+ Subs</p>
+              <p className="text-sm">32K+ Subs</p>
             </div>
             
             <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-green-600/80 backdrop-blur-sm text-white px-4 py-2 rounded-lg animate-float" style={{animationDelay: '1s'}}>
               <span className="font-semibold">Projects</span>
-              <p className="text-sm">5+ Completed</p>
+              <p className="text-sm">10+ Completed</p>
             </div>
           </div>
 
@@ -93,7 +93,7 @@ const About = () => {
                   <FaYoutube className="text-3xl text-red-500 group-hover:scale-110 transition-transform duration-300" />
                 </div>
                 <h5 className="text-center font-semibold mb-1">YouTube</h5>
-                <small className="text-gray-400 block text-center">22K+ Subscriber</small>
+                <small className="text-gray-400 block text-center">32K+ Subscriber</small>
               </div>
 
               <div className="bg-gray-800/40 backdrop-blur-sm rounded-xl p-6 border border-indigo-500/20 hover:border-indigo-500/40 transition-all duration-300 group">
@@ -101,7 +101,7 @@ const About = () => {
                   <BsFolderCheck className="text-3xl text-green-400 group-hover:scale-110 transition-transform duration-300" />
                 </div>
                 <h5 className="text-center font-semibold mb-1">Projects</h5>
-                <small className="text-gray-400 block text-center">5+ Completed</small>
+                <small className="text-gray-400 block text-center">10+ Completed</small>
               </div>
             </div>
 

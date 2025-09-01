@@ -78,43 +78,43 @@ const data = [
 ];
 
 // 3D Portfolio Item Component
-// function PortfolioCube({ image, title, position, onClick, isSelected }) {
-//   const meshRef = useRef();
+function PortfolioCube({ image, title, position, onClick, isSelected }) {
+  const meshRef = useRef();
   
-//   useFrame((state) => {
-//     if (meshRef.current) {
-//       meshRef.current.rotation.y += 0.01;
-//       // Gentle floating animation
-//       meshRef.current.position.y = position[1] + Math.sin(state.clock.elapsedTime * 2) * 0.05;
-//     }
-//   });
+  useFrame((state) => {
+    if (meshRef.current) {
+      meshRef.current.rotation.y += 0.01;
+      // Gentle floating animation
+      meshRef.current.position.y = position[1] + Math.sin(state.clock.elapsedTime * 2) * 0.05;
+    }
+  });
 
-//   return (
-//     <Float speed={2} rotationIntensity={0.5} floatIntensity={0.5}>
-//       <mesh 
-//         ref={meshRef} 
-//         position={position}
-//         onClick={onClick}
-//         scale={isSelected ? 1.2 : 1}
-//       >
-//         <boxGeometry args={[2, 2, 0.2]} />
-//         <meshStandardMaterial 
-//           color={isSelected ? "#6366f1" : "#374151"} 
-//           metalness={0.8} 
-//           roughness={0.2}
-//           transparent
-//           opacity={0.9}
-//         />
-//         <mesh position={[0, 0, 0.11]}>
-//           <planeGeometry args={[1.9, 1.9]} />
-//           <meshBasicMaterial attach="material" transparent>
-//             <canvasTexture attach="map" image={image} />
-//           </meshBasicMaterial>
-//         </mesh>
-//       </mesh>
-//     </Float>
-//   );
-// }
+  return (
+    <Float speed={2} rotationIntensity={0.5} floatIntensity={0.5}>
+      <mesh 
+        ref={meshRef} 
+        position={position}
+        onClick={onClick}
+        scale={isSelected ? 1.2 : 1}
+      >
+        <boxGeometry args={[2, 2, 0.2]} />
+        <meshStandardMaterial 
+          color={isSelected ? "#6366f1" : "#374151"} 
+          metalness={0.8} 
+          roughness={0.2}
+          transparent
+          opacity={0.9}
+        />
+        <mesh position={[0, 0, 0.11]}>
+          <planeGeometry args={[1.9, 1.9]} />
+          <meshBasicMaterial attach="material" transparent>
+            <canvasTexture attach="map" image={image} />
+          </meshBasicMaterial>
+        </mesh>
+      </mesh>
+    </Float>
+  );
+}
 
 const Portfolio = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -159,7 +159,7 @@ const Portfolio = () => {
             {/* <OrbitControls 
               enableZoom={true} 
               enablePan={true}
-              autoRotate={false}
+              autoRotate={false} 
             /> */}
           {/* </Canvas> */}
         {/* </div> */} */

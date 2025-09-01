@@ -117,39 +117,6 @@ const Services = () => {
           <h5 className="text-indigo-400 text-lg md:text-xl font-medium mb-2">What I Offer</h5>
           <h2 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-white to-indigo-200 bg-clip-text text-transparent">Services</h2>
         </div>
-
-        {/* 3D Services Visualization */}
-        <div className="h-96 mb-16 rounded-xl overflow-hidden bg-gray-800/20 backdrop-blur-sm border border-indigo-500/20">
-          <Canvas camera={{ position: [0, 0, 10], fov: 50 }}>
-            <ambientLight intensity={0.5} />
-            <directionalLight position={[5, 5, 5]} intensity={1} />
-            <pointLight position={[-5, -5, 5]} intensity={0.5} color="#4f46e5" />
-            
-            {/* Service Cards */}
-            {servicesData.map((service, index) => {
-              const x = (index - 1) * 4;
-              return (
-                <ServiceCard3D
-                  key={index}
-                  position={[x, 0, 0]}
-                  rotation={[0.1, 0, 0]}
-                  title={service.title}
-                  services={service.services}
-                  index={index}
-                  isHovered={hoveredCard === index}
-                  onHover={setHoveredCard}
-                />
-              );
-            })}
-            
-            <OrbitControls 
-              enableZoom={true} 
-              enablePan={true}
-              autoRotate={false}
-            />
-          </Canvas>
-        </div>
-
         {/* Services Details */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {servicesData.map((service, index) => (

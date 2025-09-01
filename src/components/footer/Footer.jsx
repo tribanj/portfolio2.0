@@ -92,7 +92,7 @@ const Footer = () => {
         {/* Social Links */}
         <div className="flex justify-center gap-6 mb-8">
           <a 
-            href="http://facebook.com" 
+            href="https://www.facebook.com/profile.php?id=61555580574776" 
             className="bg-indigo-600/20 hover:bg-indigo-600/30 p-3 rounded-full border border-indigo-500/30 text-indigo-300 hover:text-white transition-all duration-300 hover:scale-110"
             target="_blank" 
             rel="noopener noreferrer"
@@ -100,7 +100,7 @@ const Footer = () => {
             <FaFacebookF className="text-xl" />
           </a>
           <a 
-            href="http://instagram.com" 
+            href="http://instagram.com/tribhuwan11_" 
             className="bg-pink-600/20 hover:bg-pink-600/30 p-3 rounded-full border border-pink-500/30 text-pink-300 hover:text-white transition-all duration-300 hover:scale-110"
             target="_blank" 
             rel="noopener noreferrer"
@@ -108,7 +108,7 @@ const Footer = () => {
             <FaInstagram className="text-xl" />
           </a>
           <a 
-            href="http://twitter.com" 
+            href="http://twitter.com/@tribhuwan_93" 
             className="bg-blue-500/20 hover:bg-blue-500/30 p-3 rounded-full border border-blue-400/30 text-blue-300 hover:text-white transition-all duration-300 hover:scale-110"
             target="_blank" 
             rel="noopener noreferrer"
@@ -116,7 +116,7 @@ const Footer = () => {
             <FaTwitter className="text-xl" />
           </a>
           <a 
-            href="http://youtube.com" 
+            href="http://youtube.com/@exploreechox" 
             className="bg-red-600/20 hover:bg-red-600/30 p-3 rounded-full border border-red-500/30 text-red-300 hover:text-white transition-all duration-300 hover:scale-110"
             target="_blank" 
             rel="noopener noreferrer"
