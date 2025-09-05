@@ -20,7 +20,7 @@ const CTA = () => {
       </a>
       
       <a
-        href="#contact"
+        href="#contact-us"
         className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium text-indigo-100 transition duration-300 ease-out rounded-full shadow-md group hover:ring-1 hover:ring-indigo-300"
       >
         <span className="absolute inset-0 w-full h-full bg-gradient-to-br from-indigo-600 to-indigo-700"></span>
