@@ -9,7 +9,8 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Footer from "./components/footer/Footer";
 import Uxui from "./components/UXUI/Uxui";
 import YouTubeChannel from "./components/youtube/Youtube";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import SMMWork from "./components/socialmediamarketing/SMMWork";
 
 const MainWebsite = () => {
   return (
@@ -31,7 +32,13 @@ const App = () => {
   return (
     <Router>
       <Routes>
+        {/* UXUI page */}
         <Route path="/uxui" element={<Uxui />} />
+
+        {/* Social Media Marketing Work page */}
+        <Route path="/social-media-marketing-work" element={<SMMWork />} />
+
+        {/* Default main website */}
         <Route path="/*" element={<MainWebsite />} />
       </Routes>
     </Router>
